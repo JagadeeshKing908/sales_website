@@ -1,2 +1,15 @@
-FROM httpd:2.4
-COPY sales_website/*.war /usr/local/apache2/htdocs/
+# Stage 1: Runtime
+FROM tomcat:9.0-jre17-alpine
+
+# Remove default webapps to make it thinner and more secure
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+# Copy your WAR file to the default webapps path
+# WAR will be deployed automatically at /
+COPY target/my-app.war /usr/local/tomcat/webapps/ROOT.war
+
+# Expose default port
+EXPOSE 8080
+
+# Start Tomcat
+CMD ["catalina.sh", "run"]
