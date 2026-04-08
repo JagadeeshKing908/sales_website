@@ -1,1 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fb;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav .btn {
+  background: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+/* Features */
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* Pricing */
+.price-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 220px;
+  border-radius: 10px;
+}
+
+.card.highlight {
+  border: 2px solid #007bff;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Contact */
+.contact form {
+  max-width: 350px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
