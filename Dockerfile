@@ -1,5 +1,5 @@
 # Stage 1: Runtime
-FROM tomcat:9.0-jre17-alpine
+FROM tomcat:jre25-temurin-noble
 
 # Remove default webapps to make it thinner and more secure
 RUN rm -rf /usr/local/tomcat/webapps/*
