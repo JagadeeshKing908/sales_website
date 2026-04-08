@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+    tools {
+        maven 'mymaven'
+    }
+    stages {
+        stage ('cleanWs') {
+            steps {
+                cleanWs()
+            }
+        }
+        stage ('git') {
+            steps {
+                git 'https://github.com/JagadeeshKing908/sales_website.git'
+            }
+        }
+        stage ('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        stage('image') {
+            steps {
+               sh 'docker build -t jagadeesh9088/sales_website:v1 . '
+            }
+        }
+        stage ('containers') {
+            steps {
+                sh 'docker run -itd --name ${container_name} -p ${port}:8080 jagadeesh9088/sales_website:v1  '
+            }
+        }
+    }
+}
