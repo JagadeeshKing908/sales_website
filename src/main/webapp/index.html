@@ -1,85 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SmartSales</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="logo">SmartSales</div>
-  <nav>
-    <a href="#features">Features</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-    <a href="#" class="btn">Login</a>
-  </nav>
-</header>
+<h1>Contact Form</h1>
 
-<section class="hero">
-  <h1>Boost Your Sales with Smart Automation</h1>
-  <p>All-in-one platform to manage leads, customers, and growth strategies.</p>
-  <a href="#pricing" class="cta-btn">Get Started</a>
-</section>
+<form action="contact" method="post">
+  <input type="text" name="name" placeholder="Name" required><br>
+  <input type="email" name="email" placeholder="Email" required><br>
+  <textarea name="message" placeholder="Message" required></textarea><br>
+  <button type="submit">Submit</button>
+</form>
 
-<section id="features">
-  <h2>Powerful Features</h2>
-  <div class="feature-grid">
-    <div class="feature">
-      <h3>Lead Tracking</h3>
-      <p>Track and manage leads in real-time.</p>
-    </div>
-    <div class="feature">
-      <h3>Smart Insights</h3>
-      <p>AI-driven analytics for better decisions.</p>
-    </div>
-    <div class="feature">
-      <h3>Team Collaboration</h3>
-      <p>Collaborate with shared dashboards.</p>
-    </div>
-  </div>
-</section>
-
-<section id="pricing">
-  <h2>Simple Pricing</h2>
-  <div class="price-cards">
-    <div class="card">
-      <h3>Starter</h3>
-      <p class="price">$19/month</p>
-      <button>Choose Plan</button>
-    </div>
-
-    <div class="card highlight">
-      <h3>Professional</h3>
-      <p class="price">$49/month</p>
-      <button>Choose Plan</button>
-    </div>
-
-    <div class="card">
-      <h3>Enterprise</h3>
-      <p class="price">$99/month</p>
-      <button>Choose Plan</button>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <form id="contactForm">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea placeholder="Your Message" rows="4" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-  <p id="form-message"></p>
-</section>
-
-<footer>
-  <p>© 2025 SmartSales. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
