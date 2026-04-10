@@ -7,7 +7,7 @@
 
     <groupId>com.smartsales</groupId>
     <artifactId>smartsales-app</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <!-- Packaging as WAR for web deployment -->
     <packaging>war</packaging>
